@@ -1,0 +1,32 @@
+.principal{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+body{
+background-color: black;
+}
+
+.texto-demo{
+    width: 50%;
+    animation: typing 2s steps(20), blink .7s step-end infinite;
+    color: lawngreen;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: cyan;
+    }
+}
