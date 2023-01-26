@@ -4,9 +4,17 @@
     place-items: center;
 }
 
-body{
+/*body{
 background-color: black;
+}*/
+
+body{
+    background: linear-gradient(
+        to right, #833ab4, #fd1d1d, #fcb045);
+        background-size: 400% 400%;
+        animation: body 10s infinite ease-in-out;
 }
+
 
 .texto-demo{
     width: 50%;
@@ -17,6 +25,16 @@ background-color: black;
     border-right: 4px solid;
     font-family: monospace;
     font-size: 2em;
+}
+
+@keyframes body{
+    0%{
+        background-position: 0 50%;
+    }50%{
+        background-position: 100% 50%;
+    }100%{
+        background-position: 0 50%;
+    }
 }
 
 @keyframes typing {
